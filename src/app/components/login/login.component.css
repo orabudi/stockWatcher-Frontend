@@ -1,0 +1,22 @@
+.main-card {
+  text-align: center;
+  /* color - TODO: decide color of text */
+  align-self: center;
+  width: 30vw; /* TODO: make different width for types of devices - for phone make 65 vw */
+  height: 40vh;
+  left: 35vw;
+  right: 35vw;
+  top: 12.5vh;
+}
+
+.google-sign-in {
+  width: 10vw;
+  height: 2vw;
+  display: flex;
+  flex-direction: row; /*added*/
+  /* TODO: place button in center */
+}
+
+.google-icon {
+  height: 100%;
+}

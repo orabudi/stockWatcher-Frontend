@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebsiteHeaderComponent implements OnInit {
   constructor() {}
+  darkModeChecked = false;
 
   ngOnInit(): void {}
+
+  // TODO: when darkModeChecked changes value, change app colors
 }

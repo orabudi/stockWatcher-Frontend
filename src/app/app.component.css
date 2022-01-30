@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 7.5vh;
+  width: 100vw;
+  /* TODO: change background to canvas wave */
+  background-color: rgb(7, 163, 7);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 7.5vh;
+  width: 100vw;
+  /* TODO: change background to canvas wave */
+  background-color: rgb(189, 13, 13);
+}
+
+body {
+  position: fixed;
+  top: 10vh;
+  width: 100vw;
+  height: 85vh;
+}
