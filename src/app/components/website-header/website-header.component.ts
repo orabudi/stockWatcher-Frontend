@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./website-header.component.css'],
 })
 export class WebsiteHeaderComponent implements OnInit {
-  constructor() {}
   darkModeChecked = false;
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const themeMode = localStorage.getItem('darkModeTheme');
+    if (themeMode === 'DARK') {
+      this.darkModeChecked = true;
+    }
+  }
 
-  // TODO: when darkModeChecked changes value, change app colors
+  themeChanged = () => {
+    localStorage.setItem(
+      'darkModeTheme',
+      this.darkModeChecked ? 'DARK' : 'LIGHT'
+    );
+  };
 }

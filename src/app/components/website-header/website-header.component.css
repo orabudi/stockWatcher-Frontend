@@ -3,5 +3,6 @@
   top: 2.5vh;
   position: fixed;
   color: white;
+  direction: rtl;
   /* TODO: change size according to different device sizes and change color according to dark mode or not */
 }

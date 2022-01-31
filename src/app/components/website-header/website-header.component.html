@@ -1,3 +1,13 @@
-<mat-slide-toggle class="dark-mode-slider" [(ngModel)]="darkModeChecked"
-  >Dark Mode</mat-slide-toggle
+<!-- TODO: mat-app-background not working -->
+<div
+  class="mat-app-background"
+  [ngClass]="{ 'dark-mode-theme': darkModeChecked }"
 >
+  <mat-slide-toggle
+    class="dark-mode-slider"
+    [(ngModel)]="darkModeChecked"
+    (change)="themeChanged()"
+  >
+    Dark Mode
+  </mat-slide-toggle>
+</div>
